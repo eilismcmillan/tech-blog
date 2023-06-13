@@ -1,0 +1,147 @@
+:root {
+  --main-color: #4d8e1b;
+  --seconday-color: #c1c7c8;
+  --tertiary-color: #9f80c4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "sans-serif";
+  font-size: 18px;
+}
+
+main {
+  margin-left: 16%;
+  margin-right: 2%;
+  margin-top: 120px;
+}
+
+header {
+  background-color: var(--main-color);
+  text-align: start;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 2 !important;
+}
+
+#nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 130px;
+  width: 14%;
+  background-color: var(--seconday-color);
+  height: 100%;
+  position: fixed;
+  overflow: auto;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+  margin: 2em auto 2em 0.8em;
+  border-radius: 7px;
+  padding: 5em auto 2em 1.3em;
+}
+
+li a:hover {
+  color: black;
+  cursor: pointer;
+}
+
+li {
+  padding: 5em auto 2em 1.3em;
+  margin: 1.3em 0.8em;
+  border-radius: 7px;
+}
+
+li:hover {
+  color: black;
+  cursor: pointer;
+}
+
+li:first-child {
+  margin-top: 2em;
+}
+
+form {
+  background-color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 10em;
+  text-align: center;
+  margin: auto 10em;
+  box-shadow: rgba(0, 0, 0, 0.079) 10px 10px 6px;
+}
+
+input,
+#submit,
+form {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.079) 5px 5px 3.2px;
+}
+
+label {
+  margin: 0.3em;
+  font-size: 1.3em;
+}
+
+input {
+  border-style: none;
+  margin: 0.2em;
+  height: 3em;
+  text-align: center;
+}
+
+#submit {
+  font-size: 20px;
+  margin: 1em auto 0.2em auto;
+  width: 7em;
+  height: 2em;
+  background-color: white;
+  color: var(--tertiary-color);
+  border-radius: 10px;
+  border: solid 2px var(--tertiary-color);
+}
+
+#submit:hover {
+  background-color: var(--tertiary-color);
+  cursor: pointer;
+  color: black;
+}
+
+.redirection {
+  padding-right: 0.8rem;
+  text-align: end;
+  margin-right: 10em;
+  margin-top: 1em;
+  font-size: 1.1em;
+}
+
+.redirection a {
+  background-color: white;
+  border: solid 2px var(--tertiary-color);
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--tertiary-color);
+  padding: 0.4em 0.6em;
+  box-shadow: rgba(0, 0, 0, 0.079) 5px 5px 3.2px;
+}
+
+.redirection a:hover {
+  cursor: pointer;
+  color: black;
+  background-color: var(--tertiary-color);
+}
+
+#blog-card {
+  padding-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: end;
+}
