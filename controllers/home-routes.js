@@ -9,6 +9,6 @@ router.get("/", (req, res) => {
 });
 
 router.get("/signUp", (req, res) => {
-  res.render("signUp");
+  res.render("sign-up");
 });
 module.exports = router;
