@@ -2,7 +2,7 @@
     <h2 class="slogan"> Sign Up Now... </h2>
     {{!-- User Sign Up --}}
     <div class="signUp-container">
-        <form action="/users/signup" method="POST" class="signup-form">
+        <form action="/users/signUp" method="POST" class="signup-form">
             {{!-- Prompts user to enter their name --}}
             <label for="name">Username:</label>
             <input type="text" id="name" name="name" required>
@@ -17,7 +17,7 @@
         </form>
         {{!-- returns to the home page if user already has an account after clicking log in --}}
         <div>
-            <p class="redirection">Already have an account? <a href="/login">Log In</a></p>
+            <p class="redirection">Already have an account? <a href="/">Log In</a></p>
         </div>
     </div>
 </section>

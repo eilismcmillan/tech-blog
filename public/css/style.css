@@ -1,7 +1,7 @@
 :root {
-  --main-color: #4d8e1b;
-  --seconday-color: #c1c7c8;
-  --tertiary-color: #9f80c4;
+  --main-color: #81c54c;
+  --seconday-color: #e2eced;
+  --tertiary-color: #a265ed;
 }
 
 * {
@@ -12,50 +12,61 @@
 }
 
 main {
-  margin-left: 16%;
-  margin-right: 2%;
-  margin-top: 120px;
+  margin: 10em 12em;
 }
 
 header {
   background-color: var(--main-color);
   text-align: start;
   margin: 0;
+  margin-bottom: 3em;
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
-  z-index: 2 !important;
+  z-index: 1 !important;
+}
+
+h1 {
+  font-size: 2em;
+  color: var(--tertiary-color);
+  padding: 0.8em 1em;
 }
 
 #nav-list {
   list-style-type: none;
-  margin: 0;
+  text-align: end;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 auto;
+  position: fixed;
+  /* margin: 0;
   padding: 0;
   padding-top: 130px;
   width: 14%;
   background-color: var(--seconday-color);
   height: 100%;
-  position: fixed;
-  overflow: auto;
+  
+  overflow: auto; */
 }
 
 li a {
   text-decoration: none;
   color: black;
-  margin: 2em auto 2em 0.8em;
   border-radius: 7px;
-  padding: 5em auto 2em 1.3em;
+  background-color: var(--seconday-color);
+  padding: 5px;
 }
 
 li a:hover {
   color: black;
   cursor: pointer;
+  background-color: var(--tertiary-color);
 }
 
 li {
-  padding: 5em auto 2em 1.3em;
-  margin: 1.3em 0.8em;
+  padding: 1em auto 2em 1.3em;
+  margin: 0.3em 0.8em;
   border-radius: 7px;
 }
 
@@ -74,7 +85,7 @@ form {
   flex-direction: column;
   padding: 2rem 10em;
   text-align: center;
-  margin: auto 10em;
+  margin: auto;
   box-shadow: rgba(0, 0, 0, 0.079) 10px 10px 6px;
 }
 

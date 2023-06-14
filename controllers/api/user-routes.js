@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { Bill, User } = require('../../models');
 
 
-router.post('/signup', async (req, res) => {
+router.post('/signUp', async (req, res) => {
   try {
     const userData = await User.create({
       name: req.body.name,
@@ -12,6 +12,7 @@ router.post('/signup', async (req, res) => {
       req.session.loggedIn = true;
       req.session.user_id = userData.dataValues.id;
       req.session.name = userData.dataValues.name;
+      req.session.email = userData.dataValues.email;
 
       res.status(200).json(userData);
     });
@@ -24,7 +25,7 @@ router.post('/signup', async (req, res) => {
 
 router.post('/login', async (req, res) => {
   try {
-    const userData = await User.findOne({ where: { name: req.body.name} });
+    const userData = await User.findOne({ where: { name: req.body.name, email: req.body.email } });
 
     if (!userData) {
       res
