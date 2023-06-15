@@ -7,6 +7,7 @@ router.post('/signUp', async (req, res) => {
     const userData = await User.create({
       name: req.body.name,
       password: req.body.password,
+      email: req.body.email
     });
     req.session.save(() => {
       req.session.loggedIn = true;

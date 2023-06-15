@@ -14,10 +14,10 @@ router.get("/", async (req, res) => {
 
       const blogposts = blogData.map((blogpost) => blogpost.get({ plain: true }));
 
-      const date = bills.map((item) => item.date_created);
+      const date = blogposts.map((item) => item.date_created);
       const date_created = date.map((item) => moment(item).format("Do MMM YYYY"));
 
-      for (let i = 0; i < bills.length; i++) {
+      for (let i = 0; i < blogposts.length; i++) {
         blogposts[i].date_created = date_created[i];
       }
 
